@@ -155,11 +155,11 @@
             }
         }
     };
-    
-    let state = 0;
-    window.onscroll = () => {
-
-        // jeśli przejedziesz pod header, wrzuć go na lewo
+    let isShowed = false;
+    let toggler = document.querySelector(".button");
+    let menu = document.querySelector(".navi");
+    function setResolution(){
+      // jeśli przejedziesz pod header, wrzuć go na lewo
       if(window.scrollY > tHWidth && window.innerWidth > 500){
         if(state != 1){
             fade.in(tH);
@@ -180,31 +180,29 @@
 
         // wersja mniej niż 500 width
       }else if(window.innerWidth < 500){
+        if(state != 2){
+          state = 2;
+          // ustawiamy rzeczy, do renderu za pierwszym razem
+          document.querySelector(".navi").style.display = "none";
+          document.querySelector(".navi").style.position = "absolute";
+
+        }
         tH.className = "med";
         document.querySelector(".button").style.display = "flex";
         document.querySelector(".signature").style.display = "flex";
-        document.querySelector(".navi").style.display = "none";
         document.querySelector(".signature > h1").style.fontSize = "x-large";
         document.querySelector(".signature > h4").style.fontSize = "medium";
         document.querySelector(".sechead").style.padding = "2vw";
-			
-					// button
-				let isShowed = false;
-    		let toggler = document.querySelector(".button");
-    		let menu = document.querySelector(".navi");
-    		toggler.onclick = () => {
-        	console.log(isShowed)
+
+        // button
+				toggler.onclick = () => {
         	if(isShowed){
             	menu.style.display = "none";
-							fade.out(menu);
         	}else{
             menu.style.display = "flex";
-						// fade.in(menu);
-
+						fade.in(menu);
         	};
         	isShowed = !isShowed;
-
-					fade.in(menu);
 
 					menu.style.flexDirection = "column";
 					menu.style.alignItems = "flex-start";
@@ -229,9 +227,11 @@
             	isShowed = false;
         		}
 					};
-				};
+				
+        
+        };
 
-        // wersja >500 px i bez scroplowania
+      // wersja >500 px i bez scroplowania
       }else{
           if(state !=0){
               state = 0;
@@ -247,7 +247,16 @@
               },200)
           }
         }
-    };
+    }
+    
+    let state = 0;
+    window.onscroll = () => {setResolution()};
+    setTimeout(()=>{
+      setResolution();
+    },100)
+
+
+
 
       // wrzucanie zdjęcia jako tło w sekcji z hobby
     let h = document.querySelector("#hobby");
