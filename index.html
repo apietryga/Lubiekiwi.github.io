@@ -71,18 +71,39 @@
     <section class="hobby">
         <div class="napis"><h2>Moje hoby:</h2></div>
         <div id="hobby"></div>
-        <div class="img2" id="morze"><img src="img/morze.jpg" alt="morze">Woda<div class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
+        <div class="img2" id="morze">
+          <img src="img/morze.jpg" alt="morze">
+          Woda
+          <div class="opis">Woda Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
             Cum magni unde, harum dicta ipsam, ex nobis accusantium aperiam adipisci quod, quidem alias perferendis sint praesentium neque dolor exercitationem fugiat porro impedit mollitia fugit? Officiis unde deleniti suscipit accusamus?
-            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.</div></div>
-        <div class="img2" id="gory"><img src="img/gory.jpg" alt="góry">Góry<div class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
+            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.
+          </div>
+        </div>
+        <div class="img2" id="gory">
+          <img src="img/gory.jpg" alt="góry">
+          Góry
+          <div class="opis">Góry Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
             Cum magni unde, harum dicta ipsam, ex nobis accusantium aperiam adipisci quod, quidem alias perferendis sint praesentium neque dolor exercitationem fugiat porro impedit mollitia fugit? Officiis unde deleniti suscipit accusamus?
-            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.</div></div>
-        <div class="img2" id="storczyk"><img src="img/storczyk.jpg" alt="storczyk">Storczyki<div class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
+            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.
+          </div>
+        </div>
+        <div class="img2" id="storczyk">
+          <img src="img/storczyk.jpg" alt="storczyk">
+          Storczyki
+          <div class="opis">Stroczyk Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
             Cum magni unde, harum dicta ipsam, ex nobis accusantium aperiam adipisci quod, quidem alias perferendis sint praesentium neque dolor exercitationem fugiat porro impedit mollitia fugit? Officiis unde deleniti suscipit accusamus?
-            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.</div></div>
-        <div class="img2" id="druty"><img src="img/druty1.jpg" alt="druty">szachy xD<div class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
+            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.
+          </div>
+        </div>
+        <div class="img2" id="druty">
+          <img src="img/druty1.jpg" alt="druty">
+          szachy xD
+          <div class="opis">
+          Szachy Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, qui sed placeat magnam necessitatibus voluptatibus iure consequatur velit corrupti odio vitae. Aperiam, repellendus dicta a pariatur possimus tenetur eos optio.
             Cum magni unde, harum dicta ipsam, ex nobis accusantium aperiam adipisci quod, quidem alias perferendis sint praesentium neque dolor exercitationem fugiat porro impedit mollitia fugit? Officiis unde deleniti suscipit accusamus?
-            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.</div></div>
+            Id, fugit cupiditate! Iure esse dolorem, vel, sapiente est molestias rem commodi odio quaerat iste rerum pariatur provident neque odit itaque sunt? Eum, expedita! Nobis ullam officia tempora animi. Quis.
+          </div>
+        </div>
 
     </section>
 
@@ -256,153 +277,219 @@
       setResolution();
     },100)
 
-      // wrzucanie zdjęcia jako tło w sekcji z hobby
+    // FIELDSY DO USTAWIANIA WSZYSTKIEGO NA PĘTLACH, A NIE KAŻDE Z OSOBNA ;>
+    let fields = ["morze","gory","storczyk","druty"];
+    let fieldsIMG = ["morze5.jpg","gory1.jpg","storczyk1.jpg","makrama.jpg"];
+
+    // wrzucanie zdjęcia jako tło w sekcji z hobby
     let h = document.querySelector("#hobby");
-    document.querySelector("#morze img").onmouseover = () =>{
-      h.style.backgroundImage = "url('img/morze5.jpg')";
-      fade.in(h)
-    };
-    document.querySelector("#morze img").onmouseout = () =>{
-      h.style.backgroundImage = "none";
-      fade.out(h)
-    };
 
-    document.querySelector("#gory img").onmouseover = () =>{
-      h.style.backgroundImage = "url('img/gory1.jpg')";
-      fade.in(h)
-    };
-    document.querySelector("#gory img").onmouseout = () =>{
-      h.style.backgroundImage = "none";
-      fade.out(h)
-    };
-
-    document.querySelector("#storczyk img").onmouseover = () =>{
-      h.style.backgroundImage = "url('img/storczyk1.jpg')";
-      fade.in(h)
-    };
-    document.querySelector("#storczyk img").onmouseout = () =>{
-      h.style.backgroundImage = "none";
-      fade.out(h)
-    };
-
-    document.querySelector("#druty img").onmouseover = () =>{
-      h.style.backgroundImage = "url('img/makrama.jpg')";
-      fade.in(h)
-    };
-    document.querySelector("#druty img").onmouseout = () =>{
-      h.style.backgroundImage = "none";
-      fade.out(h)
-    };
-  
-      //wyciąanie tekstu do przodu
-
-    let morzeo = document.querySelector("#morze .opis");
-    document.querySelector("#morze img").onclick = () => {
-      if(isShowed){
-        morzeo.style.display = "none";
-      }else{
-        morzeo.style.display = "flex";
-        morzeo.style.position = "absolute";
-        morzeo.style.top = "5vw";
-        morzeo.style.left = "5vw";
-        morzeo.style.zIndex = "6";
+    // FOR KTÓRY OGARNIA ZDJĘCIA W TLE WSZYSKIE NA RAZ ... 
+    for(let iteracja = 0; iteracja < fields.length; iteracja++){
+      document.querySelector("#"+fields[iteracja]+" img").onmouseover = () =>{
+        h.style.backgroundImage = "url('img/"+fieldsIMG[iteracja]+"')";
+        fade.in(h)
       };
-      isShowed = !isShowed;
-
-      document.body.onclick = (e) => {
-				let ismorzeo = false;
-        for(p of e.path){
-          if(p == morzeo || p == document.querySelector("#morze img")){
-            ismorzeo = true;
-          }
-       	};
-        if(!ismorzeo){
-          morzeo.style.display = "none";
-          isShowed = false;
-        }
-			};
-    };
-
-    let goryo = document.querySelector("#gory .opis");
-    document.querySelector("#gory img").onclick = () => {
-      if(isShowed){
-        goryo.style.display = "none";
-      }else{
-        goryo.style.display = "flex";
-        goryo.style.position = "absolute";
-        goryo.style.top = "4vw";
-        goryo.style.left = "5vw";
-        goryo.style.zIndex = "3";
+      document.querySelector("#"+fields[iteracja]+" img").onmouseout = () =>{
+        h.style.backgroundImage = "none";
+        fade.out(h)
       };
-      isShowed = !isShowed;
-
-      document.body.onclick = (e) => {
-				let isgoryo = false;
-        for(p of e.path){
-          if(p == goryo || p == document.querySelector("#gory img")){
-            isgoryo = true;
-          }
-       	};
-        if(!isgoryo){
-          goryo.style.display = "none";
-          isShowed = false;
-        }
-		  };
-    };
-
-    let storczyko = document.querySelector("#storczyk .opis");
-    document.querySelector("#storczyk img").onclick = () => {
-      if(isShowed){
-        storczyko.style.display = "none";
-      }else{
-        storczyko.style.display = "flex";
-        storczyko.style.position = "absolute";
-        storczyko.style.top = "4vw";
-        storczyko.style.left = "5vw";
-        storczyko.style.zIndex = "3";
-      };
-      isShowed = !isShowed;
-
-      document.body.onclick = (e) => {
-				let isstorczyko = false;
-        for(p of e.path){
-          if(p == storczyko || p == document.querySelector("#storczyk img")){
-            isstorczyko = true;
-          }
-       	};
-        if(!isstorczyko){
-          storczyko.style.display = "none";
-          isShowed = false;
-        }
-			};
-    };
-
-    let drutyo = document.querySelector("#druty .opis");
-    document.querySelector("#druty img").onclick = () => {
-      if(isShowed){
-        drutyo.style.display = "none";
-      }else{
-        drutyo.style.display = "flex";
-        drutyo.style.position = "absolute";
-        drutyo.style.top = "4vw";
-        drutyo.style.left = "5vw";
-        drutyo.style.zIndex = "3";
-      };
-      isShowed = !isShowed;
-
-      document.body.onclick = (e) => {
-				let isdrutyo = false;
-        for(p of e.path){
-          if(p == drutyo || p == document.querySelector("#druty img")){
-            isdrutyo = true;
-          }
-       	};
-        if(!ismorzeo){
-          drutyo.style.display = "none";
-          isShowed = false;
-        }
-			};
     }
+
+    // document.querySelector("#morze img").onmouseover = () =>{
+    //   h.style.backgroundImage = "url('img/morze5.jpg')";
+    //   fade.in(h)
+    // };
+    // document.querySelector("#morze img").onmouseout = () =>{
+    //   h.style.backgroundImage = "none";
+    //   fade.out(h)
+    // };
+
+    // document.querySelector("#gory img").onmouseover = () =>{
+    //   h.style.backgroundImage = "url('img/gory1.jpg')";
+    //   fade.in(h)
+    // };
+    // document.querySelector("#gory img").onmouseout = () =>{
+    //   h.style.backgroundImage = "none";
+    //   fade.out(h)
+    // };
+
+    // document.querySelector("#storczyk img").onmouseover = () =>{
+    //   h.style.backgroundImage = "url('img/storczyk1.jpg')";
+    //   fade.in(h)
+    // };
+    // document.querySelector("#storczyk img").onmouseout = () =>{
+    //   h.style.backgroundImage = "none";
+    //   fade.out(h)
+    // };
+
+    // document.querySelector("#druty img").onmouseover = () =>{
+    //   h.style.backgroundImage = "url('img/makrama.jpg')";
+    //   fade.in(h)
+    // };
+    // document.querySelector("#druty img").onmouseout = () =>{
+    //   h.style.backgroundImage = "none";
+    //   fade.out(h)
+    // };
+  
+    //wyciąanie tekstu do przodu
+    let showDesc = false;
+
+    // FOR KTÓRY ROBI CI TO SAMO CO WYKOMENTOWANE NIŻEJ + DZIAŁA
+    for(let f of fields){
+      let opis = document.querySelector("#"+f+" .opis");
+      document.querySelector("#"+f+" img").onclick = () => {
+        if(showDesc){
+          opis.style.display = "none";
+          // przywróć zdjęcia spowrotem
+          for(fx of fields){
+            document.querySelector("#"+fx).style.zIndex = "2";
+          }
+
+        }else{
+          opis.style.display = "flex";
+          opis.style.position = "absolute";
+          opis.style.top = "5vw";
+          opis.style.left = "5vw";
+          opis.style.zIndex = "6";
+
+          // wywal zdjęcia do tyłu
+          for(fx of fields){
+            document.querySelector("#"+fx).style.zIndex = "unset";
+          }
+        };
+        showDesc = !showDesc;
+
+        document.body.onclick = (e) => {
+          let isOpis = false;
+          for(p of e.path){
+            if(p == opis || p == document.querySelector("#"+f+" img")){
+              isOpis = true;
+            }
+          };
+          if(!isOpis){
+            opis.style.display = "none";
+            showDesc = false;
+            // przywróć zdjęcia spowrotem
+            for(fx of fields){
+              document.querySelector("#"+fx).style.zIndex = "2";
+            }
+
+
+          }
+        };
+      };
+
+
+    }
+
+    // let morzeo = document.querySelector("#morze .opis");
+    // document.querySelector("#morze img").onclick = () => {
+    //   if(isShowed){
+    //     morzeo.style.display = "none";
+    //   }else{
+    //     morzeo.style.display = "flex";
+    //     morzeo.style.position = "absolute";
+    //     morzeo.style.top = "5vw";
+    //     morzeo.style.left = "5vw";
+    //     morzeo.style.zIndex = "6";
+    //   };
+    //   isShowed = !isShowed;
+
+    //   document.body.onclick = (e) => {
+		// 		let ismorzeo = false;
+    //     for(p of e.path){
+    //       if(p == morzeo || p == document.querySelector("#morze img")){
+    //         ismorzeo = true;
+    //       }
+    //    	};
+    //     if(!ismorzeo){
+    //       morzeo.style.display = "none";
+    //       isShowed = false;
+    //     }
+		// 	};
+    // };
+
+    // let goryo = document.querySelector("#gory .opis");
+    // document.querySelector("#gory img").onclick = () => {
+    //   if(isShowed){
+    //     goryo.style.display = "none";
+    //   }else{
+    //     goryo.style.display = "flex";
+    //     goryo.style.position = "absolute";
+    //     goryo.style.top = "4vw";
+    //     goryo.style.left = "5vw";
+    //     goryo.style.zIndex = "3";
+    //   };
+    //   isShowed = !isShowed;
+
+    //   document.body.onclick = (e) => {
+		// 		let isgoryo = false;
+    //     for(p of e.path){
+    //       if(p == goryo || p == document.querySelector("#gory img")){
+    //         isgoryo = true;
+    //       }
+    //    	};
+    //     if(!isgoryo){
+    //       goryo.style.display = "none";
+    //       isShowed = false;
+    //     }
+		//   };
+    // };
+
+    // let storczyko = document.querySelector("#storczyk .opis");
+    // document.querySelector("#storczyk img").onclick = () => {
+    //   if(isShowed){
+    //     storczyko.style.display = "none";
+    //   }else{
+    //     storczyko.style.display = "flex";
+    //     storczyko.style.position = "absolute";
+    //     storczyko.style.top = "4vw";
+    //     storczyko.style.left = "5vw";
+    //     storczyko.style.zIndex = "3";
+    //   };
+    //   isShowed = !isShowed;
+
+    //   document.body.onclick = (e) => {
+		// 		let isstorczyko = false;
+    //     for(p of e.path){
+    //       if(p == storczyko || p == document.querySelector("#storczyk img")){
+    //         isstorczyko = true;
+    //       }
+    //    	};
+    //     if(!isstorczyko){
+    //       storczyko.style.display = "none";
+    //       isShowed = false;
+    //     }
+		// 	};
+    // };
+
+    // let drutyo = document.querySelector("#druty .opis");
+    // document.querySelector("#druty img").onclick = () => {
+    //   if(isShowed){
+    //     drutyo.style.display = "none";
+    //   }else{
+    //     drutyo.style.display = "flex";
+    //     drutyo.style.position = "absolute";
+    //     drutyo.style.top = "4vw";
+    //     drutyo.style.left = "5vw";
+    //     drutyo.style.zIndex = "3";
+    //   };
+    //   isShowed = !isShowed;
+
+    //   document.body.onclick = (e) => {
+		// 		let isdrutyo = false;
+    //     for(p of e.path){
+    //       if(p == drutyo || p == document.querySelector("#druty img")){
+    //         isdrutyo = true;
+    //       }
+    //    	};
+    //     if(!ismorzeo){
+    //       drutyo.style.display = "none";
+    //       isShowed = false;
+    //     }
+		// 	};
+    // }
   </script>
 </body>
 </html>
